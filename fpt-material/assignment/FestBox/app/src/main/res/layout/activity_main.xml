@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_title"
+        android:textAlignment="center"
+        android:text="FestBox" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_heading"
+        android:textAlignment="center"
+        android:text="Login" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_text"
+        android:text="UserID: " />
+    <EditText
+        android:id="@+id/edtUserID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_text"
+        android:hint="Enter user ID" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_text"
+        android:text="Password: " />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_text"
+        android:password="true"
+        android:hint="Enter password" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Login"
+        android:onClick="login" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_heading"
+        android:textAlignment="center"
+        android:text="Does not have an account?" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Register"
+        android:onClick="register" />
+    <CheckBox
+        android:id="@+id/chkLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login OK"/>
+</LinearLayout>

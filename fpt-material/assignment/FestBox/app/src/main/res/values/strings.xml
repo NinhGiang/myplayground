@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FestBox</string>
+    <dimen name="size_title">25dp</dimen>
+    <dimen name="size_heading">18dp</dimen>
+    <dimen name="size_text">15dp</dimen>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

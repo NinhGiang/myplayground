@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_navigation"
+        app:menu="@menu/dashboard_navigation"
+        app:itemBackground="@color/black"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/purple_700"
+        />
+    <EditText
+        android:gravity="fill_vertical"
+        android:layout_below="@+id/top_navigation"
+        android:id="@+id/edittext_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:hint="Enter key to search" />
+    <Button
+        android:gravity="fill_vertical"
+        android:layout_below="@id/edittext_search"
+        android:id="@+id/button_search"
+        android:text="Search"
+        android:textSize="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="searchAction"/>
+    <ListView
+        android:layout_below="@id/button_search"
+        android:id="@+id/search_by_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/black"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/purple_700"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
